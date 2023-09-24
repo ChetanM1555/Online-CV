@@ -1,5 +1,23 @@
 import './App.css';
 import profileImage from './b.jpg';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+// Set the viewport meta tag programmatically
+const metaTag = document.createElement('meta');
+metaTag.name = 'viewport';
+metaTag.content = 'width=device-width, initial-scale=1';
+document.getElementsByTagName('head')[0].appendChild(metaTag);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+
 
 const Header = ({ name, title }) => (
   <header>
