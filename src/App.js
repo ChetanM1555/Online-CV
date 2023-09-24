@@ -128,7 +128,7 @@ const cvData = {
   ],
   experiences: [
     {
-      title: 'Race Director',
+      title: 'Changes',
       company: 'Kenilworth Karting',
       date: 'Jan 2014 - 2017',
       description: 'Being a team leader, working with customers',
