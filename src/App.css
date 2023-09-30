@@ -33,8 +33,8 @@
 /* Content Styles */
 .centered-content {
   background-image: url('back.jpg');
-  background-size: 185%;
-  /* background-repeat: no-repeat; */
+  background-size: 3900px 2600px; /* Set the fixed zoom level (zoomed in 50%) */
+  background-repeat: no-repeat;
   display: flex;
   align-items: flex-start;
   color: rgb(0, 0, 0);
@@ -45,6 +45,7 @@
 .centered-content:hover {
   background-color: rgba(148, 148, 148);
 }
+
 
 @keyframes moveBackground {
   0% {
