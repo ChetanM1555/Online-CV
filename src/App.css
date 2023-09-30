@@ -196,3 +196,27 @@
 .contact-details li {
   word-wrap: break-word;
 }
+
+
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+  .centered-content {
+    flex-direction: column; /* Stack centered-content vertically */
+  }
+
+  .skills {
+    width: 100%; /* Make skills take full width */
+    margin: 0; /* Remove margin */
+  }
+
+  .experience,
+  .education {
+    width: 100%; /* Make experience and education take full width */
+    margin: 0; /* Remove margin */
+    padding-right: 20px;
+  }
+  .content-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
