@@ -26,8 +26,6 @@ const Experience = ({ experiences }) => (
       <div className="moving-character"></div>
     </ul>
 
-
-
   </section>
 );
 
@@ -85,7 +83,7 @@ const CV = ({ data }) => (
         ))}
       </ul>
       <br></br>
-      <p>Click here for info about projects I worked on.</p>
+      <p><a href="link-to-your-git-projects-page.html">View my Git projects</a></p>
     </div>
     <div className="content-column">
       <AboutMe aboutMe={data.aboutMe} />
@@ -104,11 +102,12 @@ const cvData = {
   contact: {
     email: 'chetanmanilal1@gmail.com',
     phone: '083 981 6944',
+    linkedin: '083 981 6944',
   },
 
   aboutMe: [
     {
-      description: '',
+      description: "I'm a dedicated Full Stack developer with expertise in Java and Python. I embrace Test-Driven Development (TDD) to ensure robust and efficient code. Git is my trusted version control tool, and I'm comfortable with collaboration. My passion lies in crafting responsive user interfaces and designing efficient server-side logic. I'm committed to clean code and staying current with industry trends. I thrive on challenges, constantly seeking innovative solutions. Outside of coding, I'm an avid learner, an enthusiast of emerging technologies, and a team player. Let's connect and build something amazing together!",
     },
   ],
   experiences: [
