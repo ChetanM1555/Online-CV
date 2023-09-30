@@ -52,6 +52,7 @@ const Education = ({ education }) => (
       {education.map((edu, index) => (
         <li key={index}>
           <h3>{edu.degree}</h3>
+          <p>{edu.qualification}</p>
           <p>{edu.school}</p>
           <p>{edu.date}</p>
         </li>
@@ -79,10 +80,11 @@ const CV = ({ data }) => (
         {data.skills.map((skill, index) => (
           <li key={index}>
             {skill}
-            <span className="dots"> • • • • • </span>
+            <br></br><span className="dots"> • • • • • </span>
           </li>
         ))}
       </ul>
+      <p>Click here for info about projects I worked on.</p>
     </div>
     <div className="content-column">
       <AboutMe aboutMe={data.aboutMe} />
@@ -99,13 +101,13 @@ const cvData = {
   title: 'Software Developer',
 
   contact: {
-    email: 'chetan@example.com',
-    phone: '+1234567890',
+    email: 'chetanmanilal1@gmail.com',
+    phone: '083 981 6944',
   },
 
   aboutMe: [
     {
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      description: '',
     },
   ],
   experiences: [
@@ -116,25 +118,31 @@ const cvData = {
       description: 'Being a team leader, working with customers',
     },
     {
-      title: 'Race Director',
-      company: 'Kenilworth Karting',
-      date: 'Jan 2014 - 2017',
-      description: 'Being a team leader, working with customers',
+      title: 'Journalist/Writer',
+      company: 'Value Insurance',
+      date: 'Nov 2019 - Mar 2020',
+      description: 'Writing for a website about',
+    },
+    {
+      title: 'Tech Mentor',
+      company: 'WeThinkCode__',
+      date: 'Sep 2023 - Present',
+      description: 'Helping the first years at WeThinkCode_ navigate through their first year',
     },
   ],
   education: [
     {
-      qualification: 'nqf 6',
-      school: 'WeThinkCode_',
-      date: '2022 - 2023',
+      qualification: 'Certificate: High School Diploma',
+      school: 'Rosebank Collage',
+      date: '2011',
     },
     {
-      qualification: 'nqf 6',
+      qualification: 'Certificate: Ongoing',
       school: 'WeThinkCode_',
-      date: '2022 - 2023',
+      date: '2022 - present',
     },
   ],
-  skills: ['JavaScript', 'React', 'Git', 'Java', 'Python'],
+  skills: ['Java','Python', 'Git', 'JavaScript', 'React', 'CSS' ],
 };
 
 const App = () => <CV data={cvData} />;
