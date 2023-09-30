@@ -83,7 +83,7 @@ const CV = ({ data }) => (
         ))}
       </ul>
       <br></br>
-      <p><a href="link-to-your-git-projects-page.html">View my Git projects</a></p>
+      <a href="/git.js">View my Git projects</a>
     </div>
     <div className="content-column">
       <AboutMe aboutMe={data.aboutMe} />
@@ -112,7 +112,7 @@ const cvData = {
   ],
   experiences: [
     {
-      title: 'Race',
+      title: 'Race Director',
       company: 'Kenilworth Karting',
       date: 'Jan 2014 - 2017',
       description: 'Being a team leader, working with customers',
