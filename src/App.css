@@ -193,4 +193,6 @@
 
 }
 
-
+.contact-details li {
+  word-wrap: break-word;
+}

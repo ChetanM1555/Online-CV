@@ -84,6 +84,7 @@ const CV = ({ data }) => (
           </li>
         ))}
       </ul>
+      <br></br>
       <p>Click here for info about projects I worked on.</p>
     </div>
     <div className="content-column">
