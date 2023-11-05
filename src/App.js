@@ -1,5 +1,10 @@
 import './App.css';
 import profileImage from './b.jpg';
+import { Link } from 'react-router-dom';
+
+  
+// import git component
+import gitInfo from "./gitProjects/git2";
 
 const Header = ({ name, title }) => (
   <header>
@@ -83,7 +88,9 @@ const CV = ({ data }) => (
         ))}
       </ul>
       <br></br>
-      <a href="/git.js">View my Git projects</a>
+      
+      <Link to="/git-projects">View my Git projects</Link>
+      <a href="https://github.com/ChetanM1555">View my Git projects</a>
     </div>
     <div className="content-column">
       <AboutMe aboutMe={data.aboutMe} />
