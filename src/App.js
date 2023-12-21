@@ -76,6 +76,7 @@ const CV = ({ data }) => (
         <ul>
           <li>Email: {data.contact.email}</li>
           <li>Phone: {data.contact.phone}</li>
+          <li>Linkedin: {data.contact.linkedin}</li>
         </ul>
       </div>
       <h2>Skills:</h2>
@@ -106,9 +107,9 @@ const cvData = {
   title: 'Software Developer',
 
   contact: {
-    email: 'chetanmanilal1@gmail.com',
-    phone: '083 981 6944',
-    linkedin: '083 981 6944',
+    email: 'chetanm1555@email.com',
+    phone: '083 123 6944',
+    linkedin: 'myLinkedin',
   },
 
   aboutMe: [
