@@ -89,8 +89,7 @@ const CV = ({ data }) => (
       </ul>
       <br></br>
       
-      <Link to="/git-projects">View my Git projects</Link>
-      <a href="https://github.com/ChetanM1555">View my Git projects</a>
+      
     </div>
     <div className="content-column">
       <AboutMe aboutMe={data.aboutMe} />
